@@ -1,0 +1,26 @@
+version: '3.8'
+
+services:
+  catalog-api:
+    build:
+      context: .
+      dockerfile: catalog-api/Dockerfile
+    container_name: catalog-api
+    networks:
+      - mynet
+    ports:
+      - 8093:8010
+
+  users-api:
+    build:
+      context: .
+      dockerfile: users-api/Dockerfile
+    container_name: users-api
+    networks:
+      - mynet
+    ports:
+      - 8094:8020
+
+networks:
+  mynet:
+    driver: bridge

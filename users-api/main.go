@@ -28,5 +28,5 @@ func brands(w http.ResponseWriter, r *http.Request) {
 
 func main() {
 	http.HandleFunc("/api/v1/users", brands)
-	log.Fatal(http.ListenAndServe(":5065", nil))
+	log.Fatal(http.ListenAndServe(":8020", nil))
 }
