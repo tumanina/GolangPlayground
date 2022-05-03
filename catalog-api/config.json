@@ -1,0 +1,7 @@
+{
+    "Database": 
+    {
+        "connectionString": "mongodb+srv://test:test123456@cluster0.zv4ei.mongodb.net/test",
+        "databaseName": "catalogdb"
+    }
+}
