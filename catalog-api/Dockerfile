@@ -7,6 +7,8 @@ WORKDIR /app
 
 # Download Go modules
 COPY catalog-api/go.mod .
+COPY catalog-api/go.sum .
+
 RUN go mod download
 
 COPY catalog-api/*.go ./
